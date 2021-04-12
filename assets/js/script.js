@@ -46,11 +46,11 @@ function countdown() {
 
 function startQuiz() {
     var questionsArray = [
-        { q: 'Commonly used data types DO Not Include:', answer: 2, a: 'Strings', b: 'Booleans', c: 'Alerts', d: 'Numbers' },
+        { q: 'Commonly used data types DO Not Include:', answer: 3, a: 'Strings', b: 'Booleans', c: 'Alerts', d: 'Numbers' },
         { q: 'The condition in an if / else statement is enclosed with:', answer: 3, a: 'Quotes', b: 'Curly Brackets', c: 'Parenthesis', d: 'Square Brackets' },
-        { q: 'Arrays in JavaScript can be used to store:', answer: 3, a: 'Numbers & Strings', b: 'Other Arrays', c: 'Booleans', d: 'All of the above' },
-        { q: 'When being assigned to variables, string values must be enclosed within:', answer: 2, a: 'Commas', b: 'Curly Brackets', c: 'Quotes', d: 'Parenthesis' },
-        { q: 'A very useful tool used during development and debugging for printing content to the debugger is:', answer: 3, a: 'JavaScript', b: 'Terminal/Bash', c: 'For Loops', d: 'Console.log' }
+        { q: 'Arrays in JavaScript can be used to store:', answer: 4, a: 'Numbers & Strings', b: 'Other Arrays', c: 'Booleans', d: 'All of the above' },
+        { q: 'When being assigned to variables, string values must be enclosed within:', answer: 3, a: 'Commas', b: 'Curly Brackets', c: 'Quotes', d: 'Parenthesis' },
+        { q: 'A very useful tool used during development and debugging for printing content to the debugger is:', answer: 4, a: 'JavaScript', b: 'Terminal/Bash', c: 'For Loops', d: 'Console.log' }
     ];
 
     var correctAnswers = 0;
@@ -74,9 +74,9 @@ function startQuiz() {
     listEl.setAttribute('style', 'padding:20px;');
 
     //for (var i = 0; i < questionsArray.length; i++) {
-        // var i = 0;
+        var i = 2;
 
-        var userAnswer = 0;
+        var userAnswer;
 
         h2El.textContent = questionsArray[i].q;
 
@@ -116,6 +116,13 @@ function startQuiz() {
                 return;
             }
         });
+
+        // console.log(userAnswer);
+
+        // if ( userAnswer === questionsArray[i].answer ){
+        //     correctAnswers++;
+        //     console.log(correctAnswers);
+        // }
 
     //}
 
