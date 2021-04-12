@@ -53,7 +53,6 @@ function startQuiz() {
         { q: 'A very useful tool used during development and debugging for printing content to the debugger is:', answer: 3, a: 'JavaScript', b: 'Terminal/Bash', c: 'For Loops', d: 'Console.log' }
     ];
 
-    var count = 0;
     var correctAnswers = 0;
 
     countdown();
@@ -74,7 +73,7 @@ function startQuiz() {
     question.setAttribute('style', 'font-size:20px;');
     listEl.setAttribute('style', 'padding:20px;');
 
-    for (var i = 0; i < questionsArray.length; i++) {
+    //for (var i = 0; i < questionsArray.length; i++) {
         // var i = 0;
 
         var userAnswer = 0;
@@ -118,7 +117,7 @@ function startQuiz() {
             }
         });
 
-    }
+    //}
 
     container.appendChild(question);
     question.appendChild(listEl);
@@ -132,5 +131,6 @@ function startQuiz() {
     li4.appendChild(btn4);
 
 }
+
 
 startQuizBtn.onclick = startQuiz;
